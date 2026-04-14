@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-04-15 03:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "audit_engagement",
+  "company",
+  "audit_finding",
+  "evidence_title",
+  "evidence_type",
+  "file_url",
+  "reference_note"
+ ],
+ "fields": [
+  {"fieldname": "audit_engagement", "fieldtype": "Link", "label": "Audit Engagement", "options": "Audit Engagement", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "audit_finding", "fieldtype": "Link", "label": "Audit Finding", "options": "Audit Finding"},
+  {"fieldname": "evidence_title", "fieldtype": "Data", "label": "Evidence Title", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "evidence_type", "fieldtype": "Select", "label": "Evidence Type", "options": "Document\nSchedule\nConfirmation\nMemo\nOther", "default": "Document", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "file_url", "fieldtype": "Data", "label": "File URL"},
+  {"fieldname": "reference_note", "fieldtype": "Small Text", "label": "Reference Note"}
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-15 03:00:00",
+ "modified_by": "Administrator",
+ "module": "Omnexa Statutory Audit",
+ "name": "Audit Evidence",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1, "share": 1, "print": 1, "email": 1},
+  {"role": "Company Admin", "read": 1, "write": 1, "create": 1, "delete": 0, "report": 1, "export": 1, "share": 0, "print": 1, "email": 1},
+  {"role": "Desk User", "read": 1, "write": 0, "create": 0, "delete": 0, "report": 1, "export": 0, "share": 0, "print": 0, "email": 0}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

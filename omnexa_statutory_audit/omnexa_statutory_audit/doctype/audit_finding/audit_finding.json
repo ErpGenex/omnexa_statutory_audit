@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-04-15 03:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "audit_engagement",
+  "company",
+  "balance_snapshot",
+  "finding_title",
+  "severity",
+  "status",
+  "observation",
+  "recommendation",
+  "closure_note"
+ ],
+ "fields": [
+  {"fieldname": "audit_engagement", "fieldtype": "Link", "label": "Audit Engagement", "options": "Audit Engagement", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "balance_snapshot", "fieldtype": "Link", "label": "Balance Snapshot", "options": "Audit Balance Snapshot"},
+  {"fieldname": "finding_title", "fieldtype": "Data", "label": "Finding Title", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "severity", "fieldtype": "Select", "label": "Severity", "options": "Low\nMedium\nHigh\nCritical", "default": "Medium", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Open\nIn Progress\nClosed", "default": "Open", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "observation", "fieldtype": "Text", "label": "Observation", "reqd": 1},
+  {"fieldname": "recommendation", "fieldtype": "Text", "label": "Recommendation"},
+  {"fieldname": "closure_note", "fieldtype": "Small Text", "label": "Closure Note"}
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-15 03:00:00",
+ "modified_by": "Administrator",
+ "module": "Omnexa Statutory Audit",
+ "name": "Audit Finding",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1, "share": 1, "print": 1, "email": 1},
+  {"role": "Company Admin", "read": 1, "write": 1, "create": 1, "delete": 0, "report": 1, "export": 1, "share": 0, "print": 1, "email": 1},
+  {"role": "Desk User", "read": 1, "write": 0, "create": 0, "delete": 0, "report": 1, "export": 0, "share": 0, "print": 0, "email": 0}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
