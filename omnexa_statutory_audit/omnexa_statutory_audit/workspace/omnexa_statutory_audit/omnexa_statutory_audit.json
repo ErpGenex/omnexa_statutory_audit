@@ -7,7 +7,7 @@
  "for_user": "",
  "hide_custom": 0,
  "icon": "list",
- "is_hidden": 0,
+ "is_hidden": 1,
  "label": "Statutory Audit",
  "links": [
   {"hidden": 0, "is_query_report": 0, "label": "Engagements", "link_count": 0, "onboard": 0, "type": "Card Break"},
@@ -26,7 +26,7 @@
  "name": "Statutory Audit",
  "number_cards": [],
  "owner": "Administrator",
- "public": 1,
+ "public": 0,
  "roles": [],
  "sequence_id": 9.0,
  "shortcuts": [],

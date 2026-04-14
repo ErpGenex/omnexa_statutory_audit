@@ -144,6 +144,23 @@ required_apps = ["omnexa_core"]
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+	"Audit Engagement": {
+		"before_validate": "omnexa_core.omnexa_core.user_context.apply_company_branch_defaults"
+	},
+	"Audit Balance Snapshot": {
+		"before_validate": "omnexa_core.omnexa_core.user_context.apply_company_branch_defaults"
+	},
+	"Audit Finding": {
+		"before_validate": "omnexa_core.omnexa_core.user_context.apply_company_branch_defaults"
+	},
+	"Audit Evidence": {
+		"before_validate": "omnexa_core.omnexa_core.user_context.apply_company_branch_defaults"
+	},
+	"Audit Opinion Draft": {
+		"before_validate": "omnexa_core.omnexa_core.user_context.apply_company_branch_defaults"
+	},
+}
 
 # Scheduled Tasks
 # ---------------
