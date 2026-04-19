@@ -1,0 +1,20 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
+  {"fieldname": "audit_engagement", "fieldtype": "Link", "label": "Audit Engagement", "options": "Audit Engagement", "width": "220px"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Statutory Audit",
+ "name": "Audit Finding Summary",
+ "ref_doctype": "Audit Finding",
+ "report_name": "Audit Finding Summary",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Company Admin"},
+  {"role": "Desk User"}
+ ]
+}

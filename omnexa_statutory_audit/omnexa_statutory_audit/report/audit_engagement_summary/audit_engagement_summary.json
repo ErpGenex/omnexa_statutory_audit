@@ -1,0 +1,21 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
+  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "width": "180px"},
+  {"fieldname": "fiscal_year", "fieldtype": "Link", "label": "Fiscal Year", "options": "Fiscal Year", "width": "160px"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Statutory Audit",
+ "name": "Audit Engagement Summary",
+ "ref_doctype": "Audit Engagement",
+ "report_name": "Audit Engagement Summary",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Company Admin"},
+  {"role": "Desk User"}
+ ]
+}
