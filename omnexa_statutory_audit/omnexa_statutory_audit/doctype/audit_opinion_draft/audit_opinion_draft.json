@@ -6,19 +6,27 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "identity_section",
   "audit_engagement",
   "company",
+  "opinion_section",
   "opinion_type",
   "status",
   "opinion_text",
+  "control_section",
+  "review_owner",
   "reviewer_note"
  ],
  "fields": [
+  {"fieldname": "identity_section", "fieldtype": "Section Break", "label": "Opinion Identity"},
   {"fieldname": "audit_engagement", "fieldtype": "Link", "label": "Audit Engagement", "options": "Audit Engagement", "reqd": 1, "in_list_view": 1},
   {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "opinion_section", "fieldtype": "Section Break", "label": "Opinion"},
   {"fieldname": "opinion_type", "fieldtype": "Select", "label": "Opinion Type", "options": "Unmodified\nQualified\nAdverse\nDisclaimer", "default": "Unmodified", "reqd": 1, "in_list_view": 1},
   {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nUnder Review\nIssued", "default": "Draft", "reqd": 1, "in_list_view": 1},
   {"fieldname": "opinion_text", "fieldtype": "Text", "label": "Opinion Text"},
+  {"fieldname": "control_section", "fieldtype": "Section Break", "label": "Control"},
+  {"fieldname": "review_owner", "fieldtype": "Link", "label": "Review Owner", "options": "User"},
   {"fieldname": "reviewer_note", "fieldtype": "Small Text", "label": "Reviewer Note"}
  ],
  "grid_page_length": 50,
