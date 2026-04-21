@@ -1,55 +1,160 @@
 {
- "actions": [],
- "allow_rename": 1,
- "autoname": "hash",
- "creation": "2026-04-15 02:30:00",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "identity_section",
-  "audit_engagement",
-  "company",
-  "fiscal_year",
-  "gl_account",
-  "balance_section",
-  "book_balance",
-  "audited_balance",
-  "variance_amount",
-  "review_status",
-  "control_section",
-  "review_owner",
-  "review_note"
- ],
- "fields": [
-  {"fieldname": "identity_section", "fieldtype": "Section Break", "label": "Snapshot Identity"},
-  {"fieldname": "audit_engagement", "fieldtype": "Link", "label": "Audit Engagement", "options": "Audit Engagement", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "fiscal_year", "fieldtype": "Link", "label": "Fiscal Year", "options": "Fiscal Year", "reqd": 1},
-  {"fieldname": "gl_account", "fieldtype": "Link", "label": "GL Account", "options": "GL Account", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "balance_section", "fieldtype": "Section Break", "label": "Balance Comparison"},
-  {"fieldname": "book_balance", "fieldtype": "Currency", "label": "Book Balance", "reqd": 1, "default": "0"},
-  {"fieldname": "audited_balance", "fieldtype": "Currency", "label": "Audited Balance", "reqd": 1, "default": "0"},
-  {"fieldname": "variance_amount", "fieldtype": "Currency", "label": "Variance Amount", "read_only": 1, "in_list_view": 1},
-  {"fieldname": "review_status", "fieldtype": "Select", "label": "Review Status", "options": "Pending\nCleared\nNeeds Adjustment", "default": "Pending", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "control_section", "fieldtype": "Section Break", "label": "Control"},
-  {"fieldname": "review_owner", "fieldtype": "Link", "label": "Review Owner", "options": "User"},
-  {"fieldname": "review_note", "fieldtype": "Small Text", "label": "Review Note"}
- ],
- "grid_page_length": 50,
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2026-04-15 02:30:00",
- "modified_by": "Administrator",
- "module": "Omnexa Statutory Audit",
- "name": "Audit Balance Snapshot",
- "owner": "Administrator",
- "permissions": [
-  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1, "share": 1, "print": 1, "email": 1},
-  {"role": "Company Admin", "read": 1, "write": 1, "create": 1, "delete": 0, "report": 1, "export": 1, "share": 0, "print": 1, "email": 1},
-  {"role": "Desk User", "read": 1, "write": 0, "create": 0, "delete": 0, "report": 1, "export": 0, "share": 0, "print": 0, "email": 0}
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "hash",
+	"creation": "2026-04-15 02:30:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"audit_engagement",
+		"company",
+		"column_break_omnexa_1",
+		"fiscal_year",
+		"gl_account",
+		"balance_section",
+		"book_balance",
+		"audited_balance",
+		"variance_amount",
+		"column_break_omnexa_2",
+		"review_status",
+		"review_owner",
+		"review_note"
+	],
+	"fields": [
+		{
+			"fieldname": "audit_engagement",
+			"fieldtype": "Link",
+			"label": "Audit Engagement",
+			"options": "Audit Engagement",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "fiscal_year",
+			"fieldtype": "Link",
+			"label": "Fiscal Year",
+			"options": "Fiscal Year",
+			"reqd": 1
+		},
+		{
+			"fieldname": "gl_account",
+			"fieldtype": "Link",
+			"label": "GL Account",
+			"options": "GL Account",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "balance_section",
+			"fieldtype": "Section Break",
+			"label": "Balance Comparison"
+		},
+		{
+			"fieldname": "book_balance",
+			"fieldtype": "Currency",
+			"label": "Book Balance",
+			"reqd": 1,
+			"default": "0"
+		},
+		{
+			"fieldname": "audited_balance",
+			"fieldtype": "Currency",
+			"label": "Audited Balance",
+			"reqd": 1,
+			"default": "0"
+		},
+		{
+			"fieldname": "variance_amount",
+			"fieldtype": "Currency",
+			"label": "Variance Amount",
+			"read_only": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "review_status",
+			"fieldtype": "Select",
+			"label": "Review Status",
+			"options": "Pending\nCleared\nNeeds Adjustment",
+			"default": "Pending",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "review_owner",
+			"fieldtype": "Link",
+			"label": "Review Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "review_note",
+			"fieldtype": "Small Text",
+			"label": "Review Note"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-04-15 02:30:00",
+	"modified_by": "Administrator",
+	"module": "Omnexa Statutory Audit",
+	"name": "Audit Balance Snapshot",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1,
+			"share": 1,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Company Admin",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Desk User",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 0,
+			"email": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
 }
