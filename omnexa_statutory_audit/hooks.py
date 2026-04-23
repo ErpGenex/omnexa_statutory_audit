@@ -11,15 +11,15 @@ app_license = "mit"
 required_apps = ["omnexa_core"]
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "omnexa_statutory_audit",
-# 		"logo": "/assets/omnexa_statutory_audit/logo.png",
-# 		"title": "Omnexa Statutory Audit",
-# 		"route": "/omnexa_statutory_audit",
-# 		"has_permission": "omnexa_statutory_audit.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "omnexa_statutory_audit",
+		"logo": "/assets/omnexa_statutory_audit/logo.png",
+		"title": "Omnexa Statutory Audit",
+		"route": "/app/audit",
+		"has_permission": "omnexa_statutory_audit.api.permission.has_app_permission",
+	}
+]
 
 # Includes in <head>
 # ------------------
@@ -121,9 +121,21 @@ before_migrate = "omnexa_statutory_audit.install.enforce_supported_frappe_versio
 # 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
-# has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
-# }
+has_permission = {
+	"Audit Engagement": "omnexa_statutory_audit.api.permission.has_doctype_permission",
+	"Audit Balance Snapshot": "omnexa_statutory_audit.api.permission.has_doctype_permission",
+	"Audit Finding": "omnexa_statutory_audit.api.permission.has_doctype_permission",
+	"Audit Evidence": "omnexa_statutory_audit.api.permission.has_doctype_permission",
+	"Audit Opinion Draft": "omnexa_statutory_audit.api.permission.has_doctype_permission",
+}
+
+permission_query_conditions = {
+	"Audit Engagement": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions",
+	"Audit Balance Snapshot": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions",
+	"Audit Finding": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions",
+	"Audit Evidence": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions",
+	"Audit Opinion Draft": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions",
+}
 
 # DocType Class
 # ---------------
@@ -213,7 +225,10 @@ doc_events = {
 
 # Request Events
 # ----------------
-before_request = ["omnexa_statutory_audit.license_gate.before_request"]
+before_request = [
+	"omnexa_statutory_audit.api.permission.before_request",
+	"omnexa_statutory_audit.license_gate.before_request",
+]
 # after_request = ["omnexa_statutory_audit.utils.after_request"]
 
 # Job Events
