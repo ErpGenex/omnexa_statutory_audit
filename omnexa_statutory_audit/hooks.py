@@ -1,8 +1,8 @@
 app_name = "omnexa_statutory_audit"
 app_title = "ErpGenEx — Statutory Audit"
-app_publisher = "Omnexa"
+app_publisher = "ErpGenEx"
 app_description = "Statutory audit vertical"
-app_email = "dev@omnexa.com"
+app_email = "dev@erpgenex.com"
 app_license = "mit"
 
 # Apps

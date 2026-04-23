@@ -1,7 +1,7 @@
 [project]
 name = "omnexa_statutory_audit"
 authors = [
-    { name = "Omnexa", email = "dev@omnexa.com"}
+    { name = "ErpGenEx", email = "dev@erpgenex.com"}
 ]
 description = "Statutory audit vertical"
 requires-python = ">=3.10"
