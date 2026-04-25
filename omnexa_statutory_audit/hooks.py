@@ -195,6 +195,13 @@ doc_events = {
 # 	],
 # }
 
+# Continuous audit supervisor (daily alerts)
+scheduler_events = {
+	"daily": [
+		"omnexa_statutory_audit.omnexa_statutory_audit.supervisor.rules.run_daily_supervisor",
+	]
+}
+
 # Testing
 # -------
 
