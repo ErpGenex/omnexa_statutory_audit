@@ -6,11 +6,13 @@
 	"doctype": "DocType",
 	"engine": "InnoDB",
 	"field_order": [
+		"tab_break_overview",
 		"engagement_title",
 		"company",
 		"column_break_omnexa_1",
 		"branch",
 		"fiscal_year",
+		"tab_break_1",
 		"timeline_section",
 		"engagement_start_date",
 		"engagement_end_date",
@@ -21,6 +23,16 @@
 		"notes"
 	],
 	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
 		{
 			"fieldname": "engagement_title",
 			"fieldtype": "Data",
@@ -103,7 +115,7 @@
 	"grid_page_length": 50,
 	"index_web_pages_for_search": 1,
 	"links": [],
-	"modified": "2026-04-15 02:30:00",
+	"modified": "2026-05-07 12:00:00",
 	"modified_by": "Administrator",
 	"module": "Omnexa Statutory Audit",
 	"name": "Audit Engagement",
