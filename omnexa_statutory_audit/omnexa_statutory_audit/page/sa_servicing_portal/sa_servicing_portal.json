@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Statutory Audit",
+	"name": "sa-servicing-portal",
+	"page_name": "sa-servicing-portal",
+	"standard": "Yes",
+	"title": "Digital Channel",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "All"
+		}
+	]
+}

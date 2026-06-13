@@ -1,0 +1,2 @@
+[post_model_sync]
+omnexa_statutory_audit.patches.v1_0.sync_sa_workspace_full
