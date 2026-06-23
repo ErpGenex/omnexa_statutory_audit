@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Statutory Audit",
+	"name": "statutory-audit-executive-dashboard",
+	"page_name": "statutory-audit-executive-dashboard",
+	"standard": "Yes",
+	"title": "Executive Dashboard",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}
