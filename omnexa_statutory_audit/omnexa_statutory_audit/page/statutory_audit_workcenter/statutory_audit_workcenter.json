@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Statutory Audit",
+	"name": "statutory-audit-workcenter",
+	"page_name": "statutory-audit-workcenter",
+	"standard": "Yes",
+	"title": "Statutory Audit Workcenter",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}
