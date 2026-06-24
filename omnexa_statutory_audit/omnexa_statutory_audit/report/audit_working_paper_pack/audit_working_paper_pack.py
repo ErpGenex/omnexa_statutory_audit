@@ -8,13 +8,13 @@ from __future__ import annotations
 import frappe
 from frappe import _
 
-from omnexa_statutory_audit.omnexa_statutory_audit.report.audit_engagement_summary import (
+from omnexa_statutory_audit.omnexa_statutory_audit.report.audit_engagement_summary.audit_engagement_summary import (
 	execute as engagement_execute,
 )
-from omnexa_statutory_audit.omnexa_statutory_audit.report.audit_evidence_summary import (
+from omnexa_statutory_audit.omnexa_statutory_audit.report.audit_evidence_summary.audit_evidence_summary import (
 	execute as evidence_execute,
 )
-from omnexa_statutory_audit.omnexa_statutory_audit.report.audit_finding_summary import (
+from omnexa_statutory_audit.omnexa_statutory_audit.report.audit_finding_summary.audit_finding_summary import (
 	execute as finding_execute,
 )
 
