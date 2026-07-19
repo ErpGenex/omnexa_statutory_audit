@@ -1,0 +1,137 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:{company}-{audit_engagement}",
+	"creation": "2026-04-15 03:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"audit_engagement",
+		"company",
+		"tab_break_1",
+		"opinion_section",
+		"opinion_type",
+		"status",
+		"opinion_text",
+		"review_owner",
+		"reviewer_note"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "audit_engagement",
+			"fieldtype": "Link",
+			"label": "Audit Engagement",
+			"options": "Audit Engagement",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "opinion_section",
+			"fieldtype": "Section Break",
+			"label": "Opinion"
+		},
+		{
+			"fieldname": "opinion_type",
+			"fieldtype": "Select",
+			"label": "Opinion Type",
+			"options": "Unmodified\nQualified\nAdverse\nDisclaimer",
+			"default": "Unmodified",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Draft\nUnder Review\nIssued",
+			"default": "Draft",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "opinion_text",
+			"fieldtype": "Text",
+			"label": "Opinion Text"
+		},
+		{
+			"fieldname": "review_owner",
+			"fieldtype": "Link",
+			"label": "Review Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "reviewer_note",
+			"fieldtype": "Small Text",
+			"label": "Reviewer Note"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-07 12:00:00",
+	"modified_by": "Administrator",
+	"module": "Omnexa Statutory Audit",
+	"name": "Audit Opinion Draft",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1,
+			"share": 1,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Company Admin",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Desk User",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 0,
+			"email": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

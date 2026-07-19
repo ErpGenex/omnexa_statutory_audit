@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Statutory Audit",
+	"name": "statutory-audit-finance-desk",
+	"page_name": "statutory-audit-finance-desk",
+	"standard": "Yes",
+	"title": "Finance Desk",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}
