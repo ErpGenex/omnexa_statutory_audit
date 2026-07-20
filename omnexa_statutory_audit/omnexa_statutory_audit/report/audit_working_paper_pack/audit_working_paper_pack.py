@@ -25,11 +25,16 @@ def execute(filters=None):
 		frappe.throw(_("Company is required"))
 
 	columns = [
-		{"label": _("Workpaper"), "fieldname": "workpaper", "fieldtype": "Data", "width": 140},
-		{"label": _("Engagement"), "fieldname": "audit_engagement", "fieldtype": "Link", "options": "Audit Engagement", "width": 160},
-		{"label": _("Dimension 1"), "fieldname": "dim1", "fieldtype": "Data", "width": 120},
-		{"label": _("Dimension 2"), "fieldname": "dim2", "fieldtype": "Data", "width": 120},
-		{"label": _("Count"), "fieldname": "metric_count", "fieldtype": "Int", "width": 90},
+		{"label": _("Workpaper"), "fieldname": "workpaper", "fieldtype": "Data", "width": 140
+	},
+		{"label": _("Engagement"), "fieldname": "audit_engagement", "fieldtype": "Link", "options": "Audit Engagement", "width": 160
+	},
+		{"label": _("Dimension 1"), "fieldname": "dim1", "fieldtype": "Data", "width": 120
+	},
+		{"label": _("Dimension 2"), "fieldname": "dim2", "fieldtype": "Data", "width": 120
+	},
+		{"label": _("Count"), "fieldname": "metric_count", "fieldtype": "Int", "width": 90
+	},
 	]
 
 	data = []
@@ -42,8 +47,8 @@ def execute(filters=None):
 				"audit_engagement": "",
 				"dim1": row.get("fiscal_year"),
 				"dim2": row.get("status"),
-				"metric_count": row.get("engagement_count"),
-			}
+				"metric_count": row.get("engagement_count")
+	}
 		)
 
 	_, find_rows = finding_execute(filters)
@@ -54,8 +59,8 @@ def execute(filters=None):
 				"audit_engagement": row.get("audit_engagement"),
 				"dim1": row.get("severity"),
 				"dim2": row.get("status"),
-				"metric_count": row.get("finding_count"),
-			}
+				"metric_count": row.get("finding_count")
+	}
 		)
 
 	_, ev_rows = evidence_execute(filters)
@@ -66,8 +71,8 @@ def execute(filters=None):
 				"audit_engagement": row.get("audit_engagement"),
 				"dim1": row.get("evidence_type"),
 				"dim2": "",
-				"metric_count": row.get("evidence_count"),
-			}
+				"metric_count": row.get("evidence_count")
+	}
 		)
 
 	disclaimer = _(

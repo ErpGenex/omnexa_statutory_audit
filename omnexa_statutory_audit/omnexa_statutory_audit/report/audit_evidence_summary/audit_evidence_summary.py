@@ -53,7 +53,10 @@ def execute(filters=None):
 
 def _columns():
 	return [
-		{"label": _("Audit Engagement"), "fieldname": "audit_engagement", "fieldtype": "Link", "options": "Audit Engagement", "width": 200},
-		{"label": _("Evidence type"), "fieldname": "evidence_type", "fieldtype": "Data", "width": 130},
-		{"label": _("Items"), "fieldname": "evidence_count", "fieldtype": "Int", "width": 90},
+		{"label": _("Audit Engagement"), "fieldname": "audit_engagement", "fieldtype": "Link", "options": "Audit Engagement", "width": 200
+	},
+		{"label": _("Evidence type"), "fieldname": "evidence_type", "fieldtype": "Data", "width": 130
+	},
+		{"label": _("Items"), "fieldname": "evidence_count", "fieldtype": "Int", "width": 90
+	},
 	]

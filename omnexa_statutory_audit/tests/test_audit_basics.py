@@ -7,31 +7,38 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 	def setUp(self):
 		super().setUp()
 		if not frappe.db.exists("Currency", "EGP"):
-			frappe.get_doc({"doctype": "Currency", "currency_name": "EGP", "symbol": "E£", "enabled": 1}).insert(
+			frappe.get_doc({"doctype": "Currency", "currency_name": "EGP", "symbol": "E£", "enabled": 1
+	}).insert(
 				ignore_permissions=True
 			)
 		if not frappe.db.exists("Country", "Egypt"):
-			frappe.get_doc({"doctype": "Country", "country_name": "Egypt", "code": "EG"}).insert(
+			frappe.get_doc({"doctype": "Country", "country_name": "Egypt", "code": "EG"
+	}).insert(
 				ignore_permissions=True
 			)
 
 	def _make_company(self, abbr):
-		if frappe.db.exists("Company", {"abbr": abbr}):
-			return frappe.db.get_value("Company", {"abbr": abbr}, "name")
+		if frappe.db.exists("Company", {"abbr": abbr
+	}):
+			return frappe.db.get_value("Company", {"abbr": abbr
+	}, "name")
 		return frappe.get_doc(
 			{
 				"doctype": "Company",
-				"company_name": f"Audit Co {abbr}",
+				"company_name": f"Audit Co {abbr
+	}",
 				"abbr": abbr,
 				"default_currency": "EGP",
 				"country": "Egypt",
-				"status": "Active",
-			}
+				"status": "Active"
+	}
 		).insert(ignore_permissions=True).name
 
 	def _make_branch(self, company, code):
 		return frappe.get_doc(
-			{"doctype": "Branch", "company": company, "branch_name": f"Branch {code}", "branch_code": code, "status": "Active"}
+			{"doctype": "Branch", "company": company, "branch_name": f"Branch {code
+	}", "branch_code": code, "status": "Active"
+	}
 		).insert(ignore_permissions=True).name
 
 	def _make_fiscal_year(self, company):
@@ -47,10 +54,9 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 						"period_name": "P1",
 						"period_start_date": getdate(today()),
 						"period_end_date": add_days(getdate(today()), 365),
-						"frozen": 0,
-					}
-				],
-			}
+						"frozen": 0
+	}
+				]}
 		)
 		fy.insert(ignore_permissions=True)
 		return fy.name
@@ -60,11 +66,12 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 			{
 				"doctype": "GL Account",
 				"company": company,
-				"account_number": f"9{frappe.generate_hash(length=5)}",
+				"account_number": f"9{frappe.generate_hash(length=5)
+	}",
 				"account_name": "Audit Test Account",
 				"is_group": 0,
-				"account_type": "Asset",
-			}
+				"account_type": "Asset"
+	}
 		).insert(ignore_permissions=True).name
 
 	def test_engagement_rejects_cross_company_branch(self):
@@ -81,8 +88,7 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 					"branch": branch_b,
 					"fiscal_year": fy_a,
 					"engagement_start_date": today(),
-					"engagement_end_date": add_days(today(), 30),
-				}
+					"engagement_end_date": add_days(today(), 30)}
 			).insert(ignore_permissions=True)
 
 	def test_balance_snapshot_sets_variance(self):
@@ -97,8 +103,7 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 				"branch": branch,
 				"fiscal_year": fy,
 				"engagement_start_date": today(),
-				"engagement_end_date": add_days(today(), 30),
-			}
+				"engagement_end_date": add_days(today(), 30)}
 		).insert(ignore_permissions=True)
 		gl = self._make_gl(company)
 		snap = frappe.get_doc(
@@ -109,8 +114,8 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 				"fiscal_year": fy,
 				"gl_account": gl,
 				"book_balance": 1000,
-				"audited_balance": 900,
-			}
+				"audited_balance": 900
+	}
 		).insert(ignore_permissions=True)
 		self.assertEqual(float(snap.variance_amount), -100.0)
 
@@ -126,8 +131,7 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 				"branch": branch,
 				"fiscal_year": fy,
 				"engagement_start_date": today(),
-				"engagement_end_date": add_days(today(), 30),
-			}
+				"engagement_end_date": add_days(today(), 30)}
 		).insert(ignore_permissions=True)
 		gl = self._make_gl(company)
 		snap = frappe.get_doc(
@@ -138,8 +142,8 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 				"fiscal_year": fy,
 				"gl_account": gl,
 				"book_balance": 1000,
-				"audited_balance": 1000,
-			}
+				"audited_balance": 1000
+	}
 		).insert(ignore_permissions=True)
 		finding = frappe.get_doc(
 			{
@@ -150,8 +154,8 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 				"finding_title": "Sample Finding",
 				"severity": "Medium",
 				"status": "Open",
-				"observation": "Observation text",
-			}
+				"observation": "Observation text"
+	}
 		).insert(ignore_permissions=True)
 		evidence = frappe.get_doc(
 			{
@@ -161,8 +165,8 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 				"audit_finding": finding.name,
 				"evidence_title": "Evidence 1",
 				"evidence_type": "Document",
-				"reference_note": "Working paper ref",
-			}
+				"reference_note": "Working paper ref"
+	}
 		).insert(ignore_permissions=True)
 		self.assertTrue(evidence.name)
 
@@ -173,7 +177,7 @@ class TestStatutoryAuditBasics(FrappeTestCase):
 				"company": company,
 				"opinion_type": "Unmodified",
 				"status": "Issued",
-				"opinion_text": "Draft opinion text",
-			}
+				"opinion_text": "Draft opinion text"
+	}
 		).insert(ignore_permissions=True)
 		self.assertTrue(opinion.name)

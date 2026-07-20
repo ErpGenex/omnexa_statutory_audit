@@ -17,7 +17,7 @@ add_to_apps_screen = [
 		"logo": "/assets/omnexa_statutory_audit/logo.png",
 		"title": "Omnexa Statutory Audit",
 		"route": "/app/audit",
-		"has_permission": "omnexa_statutory_audit.api.permission.has_app_permission",
+		"has_permission": "omnexa_statutory_audit.api.permission.has_app_permission"
 	}
 ]
 
@@ -126,16 +126,16 @@ has_permission = {
 	"Audit Balance Snapshot": "omnexa_statutory_audit.api.permission.has_doctype_permission",
 	"Audit Finding": "omnexa_statutory_audit.api.permission.has_doctype_permission",
 	"Audit Evidence": "omnexa_statutory_audit.api.permission.has_doctype_permission",
-	"Audit Opinion Draft": "omnexa_statutory_audit.api.permission.has_doctype_permission",
-}
+	"Audit Opinion Draft": "omnexa_statutory_audit.api.permission.has_doctype_permission"
+	}
 
 permission_query_conditions = {
 	"Audit Engagement": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions",
 	"Audit Balance Snapshot": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions",
 	"Audit Finding": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions",
 	"Audit Evidence": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions",
-	"Audit Opinion Draft": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions",
-}
+	"Audit Opinion Draft": "omnexa_statutory_audit.api.permission.get_doctype_permission_query_conditions"
+	}
 
 # DocType Class
 # ---------------
@@ -248,22 +248,22 @@ before_request = [
 
 # user_data_fields = [
 # 	{
-# 		"doctype": "{doctype_1}",
-# 		"filter_by": "{filter_by}",
-# 		"redact_fields": ["{field_1}", "{field_2}"],
+# 		"doctype": "{}",
+# 		"filter_by": "{}",
+# 		"redact_fields": ["{}", "{}"],
 # 		"partial": 1,
 # 	},
 # 	{
-# 		"doctype": "{doctype_2}",
-# 		"filter_by": "{filter_by}",
+# 		"doctype": "{}",
+# 		"filter_by": "{}",
 # 		"partial": 1,
 # 	},
 # 	{
-# 		"doctype": "{doctype_3}",
+# 		"doctype": "{}",
 # 		"strict": False,
 # 	},
 # 	{
-# 		"doctype": "{doctype_4}"
+# 		"doctype": "{}"
 # 	}
 # ]
 

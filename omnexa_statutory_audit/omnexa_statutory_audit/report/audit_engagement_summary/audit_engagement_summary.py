@@ -50,7 +50,10 @@ def execute(filters=None):
 
 def _columns():
 	return [
-		{"label": _("Fiscal Year"), "fieldname": "fiscal_year", "fieldtype": "Link", "options": "Fiscal Year", "width": 140},
-		{"label": _("Status"), "fieldname": "status", "fieldtype": "Data", "width": 120},
-		{"label": _("Engagements"), "fieldname": "engagement_count", "fieldtype": "Int", "width": 110},
+		{"label": _("Fiscal Year"), "fieldname": "fiscal_year", "fieldtype": "Link", "options": "Fiscal Year", "width": 140
+	},
+		{"label": _("Status"), "fieldname": "status", "fieldtype": "Data", "width": 120
+	},
+		{"label": _("Engagements"), "fieldname": "engagement_count", "fieldtype": "Int", "width": 110
+	},
 	]

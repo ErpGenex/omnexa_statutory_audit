@@ -60,7 +60,8 @@ def rule_modified_after_submit(hours: int = 24) -> Iterable[Finding]:
 			order by modified desc
 			limit 200
 			""",
-			{"cutoff": cutoff},
+			{"cutoff": cutoff
+	},
 			as_dict=True,
 		):
 			yield Finding(
@@ -71,7 +72,8 @@ def rule_modified_after_submit(hours: int = 24) -> Iterable[Finding]:
 				reference_doctype=dt,
 				reference_name=row.name,
 				company=_get_company_from_doc(dt, row.name),
-				evidence={"modified": str(row.modified), "modified_by": row.modified_by},
+				evidence={"modified": str(row.modified), "modified_by": row.modified_by
+	},
 			)
 
 
@@ -89,7 +91,8 @@ def rule_duplicate_sales_invoice_last_7d() -> Iterable[Finding]:
 		having count(*) >= 2
 		limit 200
 		""",
-		{"cutoff": cutoff},
+		{"cutoff": cutoff
+	},
 		as_dict=True,
 	)
 	for r in rows:
@@ -110,7 +113,8 @@ def rule_duplicate_sales_invoice_last_7d() -> Iterable[Finding]:
 			reference_doctype="Sales Invoice",
 			reference_name=name,
 			company=_get_company_from_doc("Sales Invoice", name),
-			evidence={"customer": r.customer, "base_grand_total": float(r.base_grand_total or 0), "count": int(r.cnt)},
+			evidence={"customer": r.customer, "base_grand_total": float(r.base_grand_total or 0), "count": int(r.cnt)
+	},
 		)
 
 
@@ -128,7 +132,8 @@ def rule_duplicate_payment_entry_last_7d() -> Iterable[Finding]:
 		having count(*) >= 2
 		limit 200
 		""",
-		{"cutoff": cutoff},
+		{"cutoff": cutoff
+	},
 		as_dict=True,
 	)
 	for r in rows:
@@ -152,8 +157,8 @@ def rule_duplicate_payment_entry_last_7d() -> Iterable[Finding]:
 				"party_type": r.party_type,
 				"party": r.party,
 				"paid_amount": float(r.paid_amount or 0),
-				"count": int(r.cnt),
-			},
+				"count": int(r.cnt)
+	},
 		)
 
 
@@ -175,7 +180,8 @@ def rule_journal_entry_near_period_close(days: int = 2) -> Iterable[Finding]:
 		order by posting_date desc, modified desc
 		limit 200
 		""",
-		{"start": start, "last": last},
+		{"start": start, "last": last
+	},
 		as_dict=True,
 	):
 		yield Finding(
@@ -186,7 +192,8 @@ def rule_journal_entry_near_period_close(days: int = 2) -> Iterable[Finding]:
 			reference_doctype="Journal Entry",
 			reference_name=row.name,
 			company=_get_company_from_doc("Journal Entry", row.name),
-			evidence={"posting_date": str(row.posting_date), "modified_by": row.modified_by},
+			evidence={"posting_date": str(row.posting_date), "modified_by": row.modified_by
+	},
 		)
 
 
@@ -202,7 +209,8 @@ def builtin_rule_set() -> list[tuple[str, Any]]:
 
 def upsert_alert(f: Finding) -> str:
 	"""Idempotent upsert: one open alert per (rule_code, reference_doctype, reference_name)."""
-	key = {"rule_code": f.rule_code, "reference_doctype": f.reference_doctype, "reference_name": f.reference_name}
+	key = {"rule_code": f.rule_code, "reference_doctype": f.reference_doctype, "reference_name": f.reference_name
+	}
 	existing = frappe.db.get_value("Audit Alert", key, "name")
 	values = {
 		"title": f.title,
@@ -210,7 +218,8 @@ def upsert_alert(f: Finding) -> str:
 		"applies_to": f.applies_to,
 		"rule_code": f.rule_code,
 		"company": f.company,
-		"evidence_json": json.dumps(f.evidence or {}, separators=(",", ":")),
+		"evidence_json": json.dumps(f.evidence or {
+	}, separators=(",", ":"))
 	}
 	if existing:
 		# do not overwrite status if already in progress; keep latest evidence
@@ -234,5 +243,6 @@ def run_daily_supervisor(hours: int = 24) -> dict[str, Any]:
 					frappe.log_error(title=f"Audit Supervisor rule upsert: {_code}", message=frappe.get_traceback())
 		except Exception:
 			frappe.log_error(title=f"Audit Supervisor rule run: {_code}", message=frappe.get_traceback())
-	return {"alerts_created_or_updated": len(created_or_updated), "alert_ids": created_or_updated[:50]}
+	return {"alerts_created_or_updated": len(created_or_updated), "alert_ids": created_or_updated[:50]
+	}
 

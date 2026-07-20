@@ -1,0 +1,131 @@
+{
+    "name": "Omnexa Statutory Audit",
+    "module": "omnexa_statutory_audit",
+    "is_standard": 1,
+    "shortcuts": [],
+    "links": [
+        {
+            "label": "Omnexa Statutory Audit List",
+            "name": "omnexa_statutory_audit",
+            "type": "List",
+            "link_to": "omnexa_statutory_audit",
+            "onboard": 1
+        },
+        {
+            "label": "Omnexa Statutory Audit Dashboard",
+            "name": "omnexa_statutory_audit_dashboard",
+            "type": "Dashboard",
+            "link_to": "omnexa_statutory_audit_dashboard",
+            "onboard": 1
+        }
+    ],
+    "onboarding": [],
+    "charts": [
+        {
+            "label": "Monthly Activity",
+            "chart_name": "omnexa_statutory_audit_monthly_activity",
+            "chart_type": "Line",
+            "is_standard": 1
+        },
+        {
+            "label": "Status Distribution",
+            "chart_name": "omnexa_statutory_audit_status_distribution",
+            "chart_type": "Pie",
+            "is_standard": 1
+        },
+        {
+            "label": "Performance Metrics",
+            "chart_name": "omnexa_statutory_audit_performance_metrics",
+            "chart_type": "Bar",
+            "is_standard": 1
+        }
+    ],
+    "card": {
+        "card_name": "omnexa_statutory_audit",
+        "card_style": "Default"
+    },
+    "number_cards": [
+        {
+            "label": "Total Records",
+            "number_card_name": "omnexa_statutory_audit_total_records",
+            "number_card_doc_type": "Number Card",
+            "is_standard": 1
+        },
+        {
+            "label": "Active Items",
+            "number_card_name": "omnexa_statutory_audit_active_items",
+            "number_card_doc_type": "Number Card",
+            "is_standard": 1
+        },
+        {
+            "label": "Pending Actions",
+            "number_card_name": "omnexa_statutory_audit_pending_actions",
+            "number_card_doc_type": "Number Card",
+            "is_standard": 1
+        },
+        {
+            "label": "Completed Tasks",
+            "number_card_name": "omnexa_statutory_audit_completed_tasks",
+            "number_card_doc_type": "Number Card",
+            "is_standard": 1
+        }
+    ],
+    "reports": [
+        {
+            "label": "Omnexa Statutory Audit Report",
+            "name": "omnexa_statutory_audit_report",
+            "type": "Report",
+            "is_standard": 1
+        },
+        {
+            "label": "Summary Report",
+            "name": "omnexa_statutory_audit_summary_report",
+            "type": "Report",
+            "is_standard": 1
+        },
+        {
+            "label": "Detailed Analysis",
+            "name": "omnexa_statutory_audit_detailed_analysis",
+            "type": "Report",
+            "is_standard": 1
+        },
+        {
+            "label": "Performance Report",
+            "name": "omnexa_statutory_audit_performance_report",
+            "type": "Report",
+            "is_standard": 1
+        }
+    ],
+    "operations": [
+        {
+            "label": "Create Omnexa Statutory Audit",
+            "name": "create_omnexa_statutory_audit",
+            "type": "Action",
+            "is_standard": 1
+        },
+        {
+            "label": "Import Data",
+            "name": "import_omnexa_statutory_audit_data",
+            "type": "Action",
+            "is_standard": 1
+        },
+        {
+            "label": "Export Records",
+            "name": "export_omnexa_statutory_audit_records",
+            "type": "Action",
+            "is_standard": 1
+        },
+        {
+            "label": "Settings",
+            "name": "omnexa_statutory_audit_settings",
+            "type": "Action",
+            "is_standard": 1
+        },
+        {
+            "label": "Bulk Update",
+            "name": "bulk_update_omnexa_statutory_audit",
+            "type": "Action",
+            "is_standard": 1
+        }
+    ]
+}
