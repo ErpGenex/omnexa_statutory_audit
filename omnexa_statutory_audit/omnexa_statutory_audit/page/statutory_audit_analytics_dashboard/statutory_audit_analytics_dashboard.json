@@ -1,29 +1,19 @@
 {
- "content": null,
- "creation": "2026-08-25 17:59:15.287837",
- "docstatus": 0,
- "doctype": "Page",
- "idx": 0,
- "modified": "2026-08-25 19:03:29.888224",
- "modified_by": "Administrator",
- "module": "Omnexa Statutory Audit",
- "name": "statutory-audit-analytics-dashboard",
- "owner": "Administrator",
- "page_name": "statutory-audit-analytics-dashboard",
- "roles": [
-  {
-   "role": "System Manager"
-  },
-  {
-   "role": "Company Admin"
-  },
-  {
-   "role": "Desk User"
-  }
- ],
- "script": null,
- "standard": "Yes",
- "style": null,
- "system_page": 0,
- "title": "Analytics Dashboard"
+	"doctype": "Page",
+	"module": "Omnexa Statutory Audit",
+	"name": "statutory-audit-analytics-dashboard",
+	"page_name": "statutory-audit-analytics-dashboard",
+	"standard": "Yes",
+	"title": "Analytics Dashboard",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		},
+		{
+			"role": "Desk User"
+		}
+	]
 }

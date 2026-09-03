@@ -1,0 +1,43 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "disabled": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "width": "180px"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "reqd": 1,
+   "width": "120px"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "reqd": 1,
+   "width": "120px"
+  }
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Statutory Audit",
+ "name": "Audit Balance Snapshot Register",
+ "prepared_report": 0,
+ "query": "",
+ "ref_doctype": "Audit Balance Snapshot",
+ "report_name": "Audit Balance Snapshot Register",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

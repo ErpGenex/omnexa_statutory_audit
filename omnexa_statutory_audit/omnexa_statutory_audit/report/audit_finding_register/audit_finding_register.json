@@ -1,0 +1,20 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "disabled": 0,
+ "doctype": "Report",
+ "filters": [],
+ "is_standard": "Yes",
+ "module": "Omnexa Statutory Audit",
+ "name": "Audit Finding Register",
+ "prepared_report": 0,
+ "query": "",
+ "ref_doctype": "Audit Finding",
+ "report_name": "Audit Finding Register",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}
