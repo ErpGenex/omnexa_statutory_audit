@@ -1,10 +1,10 @@
-Access denied. Only General Manager and Audit Supervisor can access Statutory Audit.,بند واجهة
+Access denied. Only General Manager and Audit Supervisor can access Statutory Audit.,Access denied. Only General Manager and Audit Supervisor can access Statutory Audit.
 Accounting,المحاسبة
 Accounts Payable,الذمم الدائنة
 Accounts Receivable,الذمم المدينة
 Actions,إجراءات
 Administrator,المسؤول
-Adverse,بند واجهة
+Adverse,Adverse
 Agriculture,الزراعة
 AI & Intelligence,الذكاء الاصطناعي والتحليلات
 All,الكل
@@ -12,10 +12,12 @@ All activities,كل الأنشطة
 All branches,كل الفروع
 ALM,إدارة الأصول والخصوم
 Analytics Dashboard,لوحة التحليلات
-Applies To,بند واجهة
+API,واجهة API
+Applies To,Applies To
+APPROVED,معتمد
 Archived,مؤرشف
-Area,بند واجهة
-Assessment,بند واجهة
+Area,مساحة
+Assessment,تقييم
 Asset Insurance,تأمين الأصول
 Assigned To,مُسند إلى
 Assigned To Me,المُسند إليّ
@@ -26,7 +28,7 @@ Audit Alert Register,سجل تنبيه تدقيق
 Audit Balance Snapshot,لقطة أرصدة التدقيق
 Audit Balance Snapshot Register,سجل لقطة أرصدة التدقيق
 Audit Engagement,ارتباط التدقيق
-Audit Engagement must belong to the same company.,يجب أن ارتباط التدقيق ينتمي إلى نفس الشركة.
+Audit Engagement must belong to the same company.,يجب أن ينتمي ارتباط التدقيق لنفس الشركة.
 Audit Engagement Register,سجل ارتباط التدقيق
 Audit Engagement Summary,ملخص ارتباط التدقيق
 Audit Evidence,أدلة التدقيق
@@ -35,7 +37,7 @@ Audit Evidence Summary,ملخص أدلة التدقيق
 Audit Exception Register,سجل الاستثناءات
 Audit Exception Register Register,سجل سجل الاستثناءات
 Audit Finding,نتيجة التدقيق
-Audit Finding must belong to the same company.,يجب أن نتيجة التدقيق ينتمي إلى نفس الشركة.
+Audit Finding must belong to the same company.,يجب أن ينتمي نتيجة التدقيق لنفس الشركة.
 Audit Finding Register,سجل نتيجة التدقيق
 Audit Finding Summary,ملخص نتيجة التدقيق
 Audit Investigation,تحقيق تدقيق
@@ -46,20 +48,20 @@ Audit Remediation Plan,خطة المعالجة
 Audit Remediation Plan Register,سجل خطة المعالجة
 Audit Risk Rule,قاعدة مخاطر التدقيق
 Audit Risk Rule Register,سجل قاعدة مخاطر التدقيق
-Audit Working Paper Pack,بند واجهة
-Audited Balance,بند واجهة
-Balance Comparison,بند واجهة
+Audit Working Paper Pack,Audit Working Paper Pack
+Audited Balance,Audited Balance
+Balance Comparison,Balance Comparison
 Balance Sheet,الميزانية العمومية
-Balance Snapshot,بند واجهة
-Balance Snapshot must belong to the same company.,يجب أن بند واجهة ينتمي إلى نفس الشركة.
+Balance Snapshot,الرصيد لقطة
+Balance Snapshot must belong to the same company.,يجب أن ينتمي الرصيد لقطة لنفس الشركة.
 Bank Unmatched Statement Lines,بنود كشف بنك غير مطابقة
-Banking,بند واجهة
+Banking,مصرفي
 Billing & collections,الفوترة والتحصيل
-Book Balance,بند واجهة
+Book Balance,Book Balance
 Bookings & registration,الحجوزات والتسجيل
 BOQ,جدول الكميات
 Branch,الفرع
-Branch must belong to the same company.,يجب أن الفرع ينتمي إلى نفس الشركة.
+Branch must belong to the same company.,يجب أن ينتمي الفرع لنفس الشركة.
 Budget & cost control,الميزانية وضبط التكلفة
 Buy,المشتريات
 CAM & recoveries,المصاريف المشتركة والاستردادات
@@ -71,19 +73,19 @@ Car Rental,تأجير السيارات
 Card Break,قسم
 Chart,مخطط
 Chart of Accounts,دليل الحسابات
-Cleared,بند واجهة
+Cleared,Cleared
 Closed,مغلق
-Closed On,مغلق On
-Closure Note,بند واجهة
-Closure Note is required when finding is Closed.,بند واجهة
+Closed On,مغلق في
+Closure Note,Closure Note
+Closure Note is required when finding is Closed.,Closure Note is required when finding is Closed.
 Commission Accrual,استحقاق العمولات
 Commission Schedule,جدول العمولات
 Company,الشركة
-Company Admin,بند واجهة
-Company is required,الشركة is مطلوب
-Company is required.,الشركة is مطلوب.
+Company Admin,الشركة المسؤول
+Company is required,الشركة مطلوب
+Company is required.,الشركة مطلوب
 Completed,مكتمل
-Completed On,مكتمل On
+Completed On,مكتمل في
 Compliance checks complete,اكتملت فحوصات الامتثال
 Compliance Exceptions,استثناءات الامتثال
 Compliance Exceptions (IFRS),استثناءات الامتثال (IFRS)
@@ -91,14 +93,14 @@ Compliance Exceptions (Tax),استثناءات الامتثال (ضريبي)
 Compliance Exceptions Dashboard,لوحة استثناءات الامتثال
 Compliance Reports,تقارير الامتثال
 Conclusion,الاستنتاج
-Confirmation,بند واجهة
+Confirmation,Confirmation
 Confirmed,مؤكد
 Construction,المقاولات
 Construction & Engineering,المقاولات والهندسة
 Consumer Finance,التمويل الاستهلاكي
 Core ERP,ERP الأساسي
 Cost Center,مركز التكلفة
-Count,بند واجهة
+Count,عدد
 Country,الدولة
 Create,إنشاء
 Credit Engine,محرك الائتمان
@@ -117,18 +119,19 @@ Design & quantities (BOQ),التصميم والكميات (جدول الكميا
 Desk,المكتب
 Desk User,المكتب مستخدم
 Details,التفاصيل
-Detected On,بند واجهة
-Detection SQL (optional),SQL — بند واجهة
+Detected On,Detected On
+Detection SQL (optional),Detection SQL (optional)
 Development Budget,ميزانية التطوير
 Development Project,مشروع تطوير
 Development Project Register,سجل مشاريع التطوير
 Development project register,سجل مشاريع التطوير
 Digital Channel,رقمي قناة
-Dimension 1,بند واجهة
-Dimension 2,بند واجهة
-Disclaimer,بند واجهة
+Dimension 1,Dimension 1
+Dimension 2,Dimension 2
+Disclaimer,Disclaimer
 Document,مستند
 Documents & Integration,المستندات والتكامل
+DRAFT,مسودة
 Draft,مسودة
 Due Date,تاريخ الاستحقاق
 E-Invoice,الفاتورة الإلكترونية
@@ -136,12 +139,12 @@ Edit,تعديل
 Education,التعليم
 Enabled,مفعّل
 Engagement,ارتباط
-Engagement Code,ارتباط الرمز
-Engagement End Date,ارتباط النهاية التاريخ
-Engagement Start Date,ارتباط بدء التاريخ
-Engagement Start Date cannot be after Engagement End Date.,بند واجهة
+Engagement Code,رمز ارتباط
+Engagement End Date,تاريخ ارتباط النهاية
+Engagement Start Date,تاريخ ارتباط بدء
+Engagement Start Date cannot be after Engagement End Date.,ارتباط بدء التاريخ لا يمكن يكون بعد ارتباط النهاية التاريخ.
 Engagement Title,ارتباط العنوان
-Engagements,بند واجهة
+Engagements,Engagements
 Engineering Consulting,الاستشارات الهندسية
 Erpgenex Property Mgmt,إدارة العقارات
 Erpgenex Realestate Dev,التطوير العقاري
@@ -151,24 +154,24 @@ ERPGENEX — Dashboard,ERPGENEX — لوحة المعلومات
 Escalation Rule,قاعدة تصعيد الإيجار
 Event,حدث
 Evidence,دليل
-Evidence Details,دليل التفاصيل
+Evidence Details,تفاصيل دليل
 Evidence JSON,دليل JSON
 Evidence Owner,دليل المالك
 Evidence Title,دليل العنوان
-Evidence Type,دليل النوع
+Evidence Type,نوع دليل
 Evidence type,دليل النوع
 Executive Dashboard,لوحة المدير التنفيذية
 Explore this workspace,استكشف مساحة العمل
 Factoring,التخصيم
-False Positive,بند واجهة
+False Positive,False Positive
 Field PWA,تطبيق الميدان
-Fieldwork,بند واجهة
+Fieldwork,Fieldwork
 File URL,ملف URL
 Filters,المرشحات
 Finance Control Exceptions,استثناءات الضوابط المالية
 Finance Control Violations,مخالفات الضوابط المالية
 Finance Controls,الضوابط المالية
-Finance Desk,بند واجهة
+Finance Desk,مالية المكتب
 Finance Engine,محرك التمويل
 Finance Group,المجموعة المالية
 Finance SoD Blocks,حظر فصل المهام (SoD)
@@ -176,14 +179,14 @@ Finance Workcenter,مركز عمل المالية
 Finding Owner,نتيجة المالك
 Finding Title,نتيجة العنوان
 Findings,النتائج
-Fiscal Year,بند واجهة
+Fiscal Year,Fiscal Year
 Fixed Assets,الأصول الثابتة
 Form,نموذج
 Further,المزيد
 General Ledger,دفتر الأستاذ العام
 GL,GL
 GL Account,حساب GL
-GL Account must belong to the same company.,يجب أن حساب GL ينتمي إلى نفس الشركة.
+GL Account must belong to the same company.,يجب أن ينتمي حساب GL لنفس الشركة.
 Global Defaults,الإعدادات العامة
 Governance,الحوكمة
 Governance Overview,نظرة عامة على الحوكمة
@@ -195,24 +198,24 @@ Help,مساعدة
 High,مرتفع
 Home,الرئيسية
 HR,الموارد البشرية
-"If provided, the engine runs this query and expects rows with doctype/name/evidence_json.",بند واجهة
+"If provided, the engine runs this query and expects rows with doctype/name/evidence_json.","If provided, the engine runs this query and expects rows with doctype/name/evidence_json."
 IFRS 16 Liability,التزام الإيجار IFRS 16
 In Progress,قيد التنفيذ
 Industry Solutions,حلول القطاعات
 Insights,رؤى وتحليلات
-Inventory,بند واجهة
+Inventory,مخزون
 Inventory & development context,المخزون وسياق التطوير
 Inventory KPI Dashboard,لوحة مؤشرات المخزون
 Inventory KPIs,مؤشرات المخزون
 Inventory Low Stock Items,أصناف منخفضة المخزون
 Inventory Reorder Needed,أصناف تحتاج إعادة طلب
 Inventory Stock Items,أصناف المخزون
-Investigating,بند واجهة
-Investigation,بند واجهة
-Investigation owner,بند واجهة
-Issued,بند واجهة
+Investigating,Investigating
+Investigation,Investigation
+Investigation owner,Investigation owner
+Issued,Issued
 Item,الصنف
-Items,بند واجهة
+Items,أصناف
 Journal Entry,قيد يومية
 Land & project charter,الأرض وميثاق المشروع
 Land Parcel,قطعة أرض
@@ -220,7 +223,7 @@ Language,اللغة
 Last Month,الشهر الماضي
 Last Week,الأسبوع الماضي
 Lead acquisition & qualification,اكتساب العملاء وتأهيلهم
-Lead Auditor,بند واجهة
+Lead Auditor,عميل محتمل مدقق
 Leasing & occupancy (IFRS 16 / IPSAS rent),التأجير والإشغال (IFRS 16 / IPSAS)
 Leasing Finance,التمويل التأجيري
 Leasing Mandate,تفويض تأجير
@@ -232,38 +235,38 @@ Maintenance — service requests,الصيانة — طلبات الخدمة
 Management Agreement,اتفاقية إدارة
 Manufacturing,التصنيع
 Medium,متوسط
-Memo,بند واجهة
+Memo,مذكرة
 Menu,القائمة
 Mortgage Finance,التمويل العقاري
 My work,عملي
 Name,الاسم
-Needs Adjustment,بند واجهة
-Needs Remediation,بند واجهة
+Needs Adjustment,Needs Adjustment
+Needs Remediation,Needs Remediation
 New,جديد
 None,لا شيء
 Notes,ملاحظات
 Notifications,الإشعارات
 Number Card,بطاقة رقمية
-Observation,بند واجهة
+Observation,Observation
 Occupancy,الإشغال
 Omnexa Accounting Settings,إعدادات محاسبة Omnexa
 Omnexa Marketplace Settings,إعدادات سوق Omnexa
 Omnexa Purchase Settings,إعدادات مشتريات Omnexa
 Omnexa Sales Settings,إعدادات مبيعات Omnexa
 Omnexa Settings,إعدادات Omnexa
-Omnexa Statutory Audit Document Summary,ملخص Omnexa — بند واجهة
+Omnexa Statutory Audit Document Summary,Omnexa Statutory Audit Document Summary
 Omnexa Stock Settings,إعدادات مخزون Omnexa
 Open,مفتوح
 Open report Compliance Exceptions Dashboard,فتح تقرير لوحة استثناءات الامتثال
-Opened On,بند واجهة
+Opened On,Opened On
 Operating Scenarios,سيناريوهات التشغيل
 Operational Risk,المخاطر التشغيلية
-Operations Desk,بند واجهة
+Operations Desk,عمليات المكتب
 Opinion,رأي
-Opinion Text,بند واجهة
-Opinion Text is required before issuing the draft.,بند واجهة
-Opinion Type,رأي النوع
-Optional numeric parameter used by some rules.,بند واجهة
+Opinion Text,Opinion Text
+Opinion Text is required before issuing the draft.,Opinion Text is required before issuing the draft.
+Opinion Type,نوع رأي
+Optional numeric parameter used by some rules.,Optional numeric parameter used by some rules.
 Other,أخرى
 Overdue,متأخر
 Overview,نظرة عامة
@@ -272,11 +275,13 @@ Owner reporting & trust accounting,تقارير الملاك والحسابات 
 Owner Statement,كشف حساب المالك
 Payment Entry,سند قبض/صرف
 Payment Plan Item,بند خطة السداد
-Payroll,بند واجهة
+Payroll,رواتب
+PENDING,قيد الانتظار
 Pending,قيد الانتظار
+PENDING_APPROVAL,قيد الموافقة
 Permit Milestone,معلم التصريح
-Plan,بند واجهة
-Planning,بند واجهة
+Plan,الخطة
+Planning,Planning
 Platform & Administration,المنصة والإدارة
 PMC Lease Liability Schedule,جدول التزام الإيجار IFRS 16
 PMC Leasing Mandate,تفويض تأجير
@@ -303,8 +308,8 @@ Property Sales Booking Register,سجل حجوزات البيع
 Property Sales Lead,عميل مبيعات عقارية
 Purchase Invoice,فاتورة شراء
 Purchase Register,سجل المشتريات
-Purchasing,بند واجهة
-Qualified,بند واجهة
+Purchasing,Purchasing
+Qualified,Qualified
 RE BOQ,جدول كميات التطوير
 RE Development,التطوير العقاري
 RE Handover Package,حزمة التسليم
@@ -317,10 +322,11 @@ RE unit inventory (sales),مخزون وحدات البيع
 RE Unit Inventory Overview,نظرة عامة على مخزون الوحدات
 Real Estate,العقارات
 Recommendation,التوصية
-Reference DocType,نوع المستند المرجعي
+Reference DocType,Reference Doc Type
 Reference Document,المرجع مستند
 Reference Note,المرجع ملاحظة
 Refresh,تحديث
+REJECTED,مرفوض
 Reload,إعادة تحميل
 Rent Aging,أعمار الإيجارات
 Rent billing register,سجل فوترة الإيجار
@@ -337,12 +343,12 @@ Restaurant,المطاعم
 Review,مراجعة
 Review Note,مراجعة ملاحظة
 Review Owner,مراجعة المالك
-Review Status,مراجعة الحالة
-Reviewer Note,بند واجهة
+Review Status,حالة مراجعة
+Reviewer Note,مراجع ملاحظة
 Rule,قاعدة
-Rule Code,قاعدة الرمز
+Rule Code,رمز قاعدة
 Rule Title,قاعدة العنوان
-Sales,بند واجهة
+Sales,مبيعات
 Sales Booking,حجز بيع
 Sales booking register,سجل حجوزات البيع
 Sales Commission Accrual,استحقاق عمولات المبيعات
@@ -351,25 +357,25 @@ Sales Invoice,فاتورة مبيعات
 Sales Lead,عميل محتمل
 Sales Portal,بوابة المبيعات
 Sales Register,سجل المبيعات
-Sample Threshold (optional),بند واجهة
+Sample Threshold (optional),عينة عتبة (اختياري)
 Save,حفظ
-Schedule,الجدول
+Schedule,جدولة
 Search or type a command,ابحث أو اكتب أمرًا
 Search or type a command ({0}),ابحث أو اكتب أمرًا ({0})
-Security,بند واجهة
+Security,الأمان
 Sell,المبيعات
 Services,الخدمات
-Set File URL or Reference Note for evidence.,URL — بند واجهة
-Set when closing investigation,بند واجهة
+Set File URL or Reference Note for evidence.,تعيين ملف URL أو المرجع ملاحظة لـ دليل .
+Set when closing investigation,Set when closing investigation
 Settings,الإعدادات
 Severity,الشدة
 Shortcut,اختصار
 SME Microfinance,التمويل متناهي الصغر
 SME Retail Finance,تمويل المنشآت والتجزئة
-"Stable identifier used by the engine, e.g. invoice_duplicate",بند واجهة
+"Stable identifier used by the engine, e.g. invoice_duplicate","Stable identifier used by the engine, e.g. invoice_duplicate"
 Status,الحالة
 Statutory Audit,المراجعة القانونية
-Statutory Audit Workcenter,بند واجهة
+Statutory Audit Workcenter,Statutory Audit Workcenter
 Stock,المخزون
 Subcontract,مقاول باطن
 Submit,إرسال
@@ -378,13 +384,15 @@ Supplier,المورد
 Supporting Attachment,مرفق داعم
 System Manager,مدير النظام
 Task List,قائمة المهام
+Tenant (Customer),المستأجر (العميل)
 This Month,هذا الشهر
 This Week,هذا الأسبوع
-Timeline and Ownership,بند واجهة
+Timeline and Ownership,Timeline and Ownership
 Timezone,المنطقة الزمنية
 Title,العنوان
 Today,اليوم
 ToDo,مهمة
+Total,الإجمالي
 Tourism,السياحة
 Trading,التجارة
 Trading & Manufacturing,التجارة والتصنيع
@@ -396,14 +404,15 @@ Unit inventory & sales readiness,مخزون الوحدات وجاهزية الب
 Unit inventory overview,نظرة عامة على مخزون الوحدات
 Unit Reservation,حجز وحدة
 Unit Reservation Register,سجل حجز الوحدات
-Unmodified,بند واجهة
+Unmodified,Unmodified
 Update,تحديث
-Validation,بند واجهة
-Variance Amount,بند واجهة
+Validation,التحقق
+Variance Amount,انحراف المبلغ
 Vehicle Finance,تمويل المركبات
 Warehouse,المستودع
-Working paper pack only — not a statutory audit opinion. Formal sign-off required per ISA 700.,بند واجهة — بند واجهة
-Workpaper,بند واجهة
+Working paper pack only — not a statutory audit opinion. Formal sign-off required per ISA 700.,Working paper pack only — not a statutory audit opinion. Formal sign-off required per ISA 700.
+Working paper — not a statutory audit opinion,ورقة عمل — ليست رأي تدقيق قانوني
+Workpaper,Workpaper
 Workspace,مساحة العمل
 Workspaces,مساحات العمل
 Yesterday,أمس
